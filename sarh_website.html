@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>صرح — عطور تجمع الذائقة العربية بالأصالة</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Scheherazade+New:wght@400;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Amiri', 'Scheherazade New', serif;
+  background: #0a0a0a;
+  color: #d4c9a8;
+  line-height: 1.8;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(212,175,55,0.1) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  font-size: 5rem;
+  color: #d4af37;
+  letter-spacing: 8px;
+  text-shadow: 0 0 40px rgba(212,175,55,0.3);
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+  color: #8a7e5a;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.hero .date {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #5a4e2a;
+  border: 1px solid #5a4e2a;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+/* Products */
+.products {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #d4af37;
+  margin-bottom: 60px;
+}
+
+.fragrance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  background: linear-gradient(180deg, #1a1a2e 0%, #0f0f1a 100%);
+  border: 1px solid #2a2a3e;
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #d4af37;
+}
+
+.card h3 {
+  font-size: 2rem;
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.card .sub {
+  color: #8a7e5a;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card p {
+  color: #a89878;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.card .note {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #2a2a3e;
+  font-size: 0.9rem;
+  color: #6a5e3a;
+}
+
+/* Story */
+.story {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #0f0f1a, #0a0a0a);
+  text-align: center;
+}
+
+.story p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  font-size: 1.2rem;
+  color: #a89878;
+  line-height: 2;
+}
+
+.story .highlight {
+  color: #d4af37;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 40px;
+  color: #3a3a2a;
+  font-size: 0.9rem;
+  border-top: 1px solid #1a1a1a;
+}
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 3rem; }
+  .hero h2 { font-size: 1rem; }
+  .fragrance-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>صَرح</h1>
+  <h2>عطور تجمع الذائقة العربية بالأصالة</h2>
+  <div class="date">قريباً — تاريخ التحرير 18.6</div>
+</div>
+
+<div class="products">
+  <h2 class="section-title">عطورنا</h2>
+  <div class="fragrance-grid">
+
+    <div class="card">
+      <h3>🟤 نجد</h3>
+      <div class="sub">العودة إلى الجذور</div>
+      <p>رائحة الأرض والبخور والعود. عطر يعيدك إلى حيث بدأت الحكاية، إلى نجد التي تحمل في ذراتها عبق الأصالة والكرم.</p>
+      <div class="note">دهن عود طبيعي • عنبر • خشب الصندل • زعفران</div>
+    </div>
+
+    <div class="card">
+      <h3>🔥 جمر</h3>
+      <div class="sub">احتراق لا ينطفئ</div>
+      <p>قوي، حاد، لا يخفت. للنفوس التي احترقت ولم تنطفئ. جمر يعبق بالتحدي، يخلد ذكرى من صمد رغم النار.</p>
+      <div class="note">جلود مدخنة • فلفل أسود • نار • مسك أسود • عنبر</div>
+    </div>
+
+    <div class="card">
+      <h3>🏛️ إرث</h3>
+      <div class="sub">ما يبقى بعد أن يذهب كل شيء</div>
+      <p>خشبي، دافيء، باقٍ. كالأثر الذي يتركه الأجداد. إرث ليس مجرد عطر، بل وصية معطرة تنتقل من جيل لآخر.</p>
+      <div class="note">عود • خشب الأرز • جلد • توابل شرقية • مسك</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="story">
+  <p class="highlight">"المسافة بين الذئب والفريسة، ليست مسافة قوة. هي مسافة وعي."</p>
+  <p>صَرح ليس مجرد عطر. إنه بيان. بيان رجل اختار أن يكون الذئب لا الفريسة، أن يبني صرحاً لا مجرد حياة.</p>
+  <p>ثلاثة عطور، ثلاثة فصول من نفس القصة. لكل منها شخصية، ولكل منها سبب.</p>
+  <p style="margin-top:30px; color:#5a4e2a;">صَرح — قريباً، إن شاء الله.</p>
+</div>
+
+<div class="footer">
+  <p>صَرح © 2026 • تصنّع في تركيا بعناية • للاستفسار: [رقم واتساب]</p>
+</div>
+
+</body>
+</html>

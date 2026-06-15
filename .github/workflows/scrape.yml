@@ -1,0 +1,36 @@
+name: Scrape Importers
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        run: python search_importers.py --oneshot
+
+      - name: Commit results
+        run: |
+          git config user.name "opencode-bot"
+          git config user.email "bot@opencode.ai"
+          git add results.csv seen_urls.json contacts.xlsx 2>/dev/null || true
+          git diff --quiet && git diff --staged --quiet || git commit -m "auto: تحديث النتائج $(date +%Y-%m-%d-%H:%M)"
+          git push
